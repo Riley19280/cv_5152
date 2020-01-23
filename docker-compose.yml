@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web:
+    container_name: cv_5152
+    build: .
+    image: 025221494343.dkr.ecr.us-east-1.amazonaws.com/rileystech:cv_5152
+    command: python manage.py runserver 0.0.0.0:80
+    volumes:
+      - .:/code
+    ports:
+      - "80:80"
+    env_file:
+      - .env
