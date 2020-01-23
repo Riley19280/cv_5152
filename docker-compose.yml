@@ -10,5 +10,7 @@ services:
       - .:/code
     ports:
       - "80:80"
+    expose:
+      - "80"
     env_file:
       - .env
