@@ -8,7 +8,7 @@ docker build --rm -t local/cv_5152 -t 025221494343.dkr.ecr.us-east-1.amazonaws.c
 
 
 if [ "$1" = "run" ]; then
-  docker run -d --rm --privileged -p 80:80 -p 9000 --network proxynet --ip 172.30.0.22 --name cv_5152 local/cv_5152
+  docker run -d --rm --privileged -p 80:80 -p 9000 --network proxynet --ip 172.30.0.23 --name cv_5152 local/cv_5152
 fi
 
 
